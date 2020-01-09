@@ -7,10 +7,20 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_main">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <EditText
+        android:layout_width="87.2dp"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:id="@+id/edtTextoAGuardar" />
+
+	<Button
+		android:text="Mostrar Nombre"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="Hello World!" />
+		android:id="@+id/btnAbrirDialogo" />
+
+
 
 </RelativeLayout>

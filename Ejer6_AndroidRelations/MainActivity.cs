@@ -12,7 +12,8 @@ namespace Ejer6_AndroidRelations
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
     public class MainActivity : AppCompatActivity
     {
-
+        private Button _btnCero, _btnUno, _btnDos, _btnTres, _btnCuatro, _btnCinco,
+            _btnSeis, _btnSiete, _btnOcho, _btnNueve, _btnDiez;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -23,6 +24,7 @@ namespace Ejer6_AndroidRelations
 
             FloatingActionButton fab = FindViewById<FloatingActionButton>(Resource.Id.fab);
             fab.Click += FabOnClick;
+            AddBindForLayout();
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)
@@ -48,6 +50,16 @@ namespace Ejer6_AndroidRelations
             Snackbar.Make(view, "Replace with your own action", Snackbar.LengthLong)
                 .SetAction("Action", (Android.Views.View.IOnClickListener)null).Show();
         }
-	}
+
+        private void AbrirDialogo() {
+
+        }
+        private void AddBindForLayout() {
+            _btnCero = FindViewById<Button>(Resource.Id.btnCero);
+            _edtTextoAGuardar = FindViewById<EditText>(Resource.Id.edtTextoAGuardar);
+
+            _btnAbrirDialogo.Click += AbrirDialogo;
+        }
+    }
 }
 

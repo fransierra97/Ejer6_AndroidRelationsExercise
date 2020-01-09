@@ -1,16 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_main">
-
-    <TextView
+    <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:columnCount="3"
         android:layout_centerInParent="true"
-        android:text="Hello World!" />
+    >
+
+    </GridLayout>
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:layout_centerInParent="true"
+        >
+        <Button
+            android:text="0"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:id="@+id/btnCero" />
+        <Button
+            android:text="1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:id="@+id/btnUno" />
+        <Button
+            android:text="2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:id="@+id/btnDos" />
+        <Button
+            android:text="3"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:id="@+id/btnTres" />
+        <Button
+            android:text="4"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:id="@+id/btnCuatro" />
+        <Button
+            android:text="5"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:id="@+id/btnCinco" />
+        <Button
+            android:text="6"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:id="@+id/btnSeis" />
+        <Button
+            android:text="7"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:id="@+id/btnSiete" />
+        <Button
+            android:text="8"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:id="@+id/btnOcho" />
+        <Button
+            android:text="9"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:id="@+id/btnNueve" />
+
+    </GridLayout>
 
 </RelativeLayout>

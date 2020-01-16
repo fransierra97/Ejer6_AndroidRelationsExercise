@@ -23,8 +23,6 @@ namespace Ejer6_AndroidRelations
         private Button _btnSiete;
         private Button _btnOcho;
         private Button _btnNueve;
-        private Button _btnDiez;
-
         private EditText _entradaTexto;
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -37,6 +35,7 @@ namespace Ejer6_AndroidRelations
             FloatingActionButton fab = FindViewById<FloatingActionButton>(Resource.Id.fab);
             fab.Click += FabOnClick;
             AddBindForLayout();
+            //Retrieveset();
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)
@@ -75,6 +74,8 @@ namespace Ejer6_AndroidRelations
                     alert.SetMessage("Clave correcta");
                     alert.Show();
                     _entradaTexto.Text = "";
+                    //Saveset();
+                    StartActivity(typeof(PostLogin));
                 } else {
                     AlertDialog.Builder alert = new AlertDialog.Builder(this);
                     alert.SetTitle("Error");

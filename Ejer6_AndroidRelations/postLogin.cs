@@ -25,11 +25,12 @@ namespace Ejer6_AndroidRelations {
 
             _tabSpec1 = _tabHost.NewTabSpec("SampleTab1");
             _tabSpec1.SetContent(Resource.Id.tabSampleTab1);
-            _tabSpec1.SetIndicator("SampleTab1");
+            _tabSpec1.SetIndicator("Registro");
 
             _tabSpec2 = _tabHost.NewTabSpec("SampleTab2");
             _tabSpec2.SetContent(Resource.Id.tabSampleTab2);
-            _tabSpec2.SetIndicator("SampleTab2");
+            _tabSpec2.SetIndicator("Listado");
+
 
             _tabHost.AddTab(_tabSpec1);
             _tabHost.AddTab(_tabSpec2);
